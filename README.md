@@ -19,7 +19,7 @@ Currently Supported Browser:
 ## 🛠 How to Install (Dev Mode)
 1. Clone this repo:
     ```bash
-    git clone https://github.com/YOUR_USERNAME/ip-range-inserter.git
+    git clone git@github.com:greekgothguy/ip_range_inserter.git
     ```
 2. Open your browser (Edge).
 3. Navigate to:
