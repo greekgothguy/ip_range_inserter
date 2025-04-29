@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IP Range Tool</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      width: 300px;
+      padding: 20px;
+      background: rgb(7, 5, 4); /* Background color */
+      color: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-sizing: border-box;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .header img {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+    }
+
+    .header h2 {
+      margin: 0;
+      font-size: 22px;
+      color: white;
+    }
+
+    label {
+      font-weight: bold;
+      margin-top: 10px;
+      display: block;
+      font-size: 14px;
+      color: white;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 8px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+      background-color: #fff;
+      color: #333;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      background-color: rgb(0, 124, 96);
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: rgb(0, 150, 116);
+    }
+
+    .section {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img src="images/logo.svg" alt="Logo">
+    <h2>IP Range Inserter</h2>
+  </div>
+
+  <div class="section">
+    <label for="ipRangeInclude">Includes</label>
+    <input type="text" id="ipRangeInclude" placeholder="10.10.2.10-240" />
+    <button id="insertInclude">Insert Includes</button>
+  </div>
+
+  <div class="section">
+    <label for="ipRangeExclude">Excludes</label>
+    <input type="text" id="ipRangeExclude" placeholder="10.10.3.10-240" />
+    <button id="insertExclude">Insert Excludes</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
